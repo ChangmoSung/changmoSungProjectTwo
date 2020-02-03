@@ -1,0 +1,1339 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@keyframes snow {
+  0% {
+    top: 0;
+    transform: scale(2);
+  }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    margin-left: 20px;
+    transform: scale(4);
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    margin-left: -20px;
+    transform: scale(2);
+  }
+  100% {
+    top: 100%;
+  }
+}
+.snow {
+  position: absolute;
+  color: white;
+  z-index: 3;
+}
+
+.snow1 {
+  animation: snow 20s linear infinite;
+  animation-delay: 0.2s;
+  left: 25%;
+}
+
+.snow2 {
+  animation: snow 17s linear infinite;
+  left: 40%;
+}
+
+.snow3 {
+  animation: snow 13s linear infinite;
+  animation-delay: 1s;
+  left: 50%;
+}
+
+.snow4 {
+  animation: snow 17s linear infinite;
+  animation-delay: 1.5s;
+  left: 60%;
+}
+
+.snow5 {
+  animation: snow 22s linear infinite;
+  left: 70%;
+}
+
+.snow6 {
+  animation: snow 19s linear infinite;
+  animation-delay: 0.7s;
+  left: 80%;
+}
+
+label {
+  display: none;
+}
+@media (max-width: 768px) {
+  label {
+    display: block;
+    position: fixed;
+    color: white;
+    font-size: 3rem;
+    z-index: 3;
+    right: 5%;
+    top: 3%;
+  }
+}
+
+input {
+  display: none;
+}
+
+.slideIn {
+  position: absolute;
+  top: -100vh;
+  transition: all 0.7s;
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .slideIn ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 15%;
+    height: 75%;
+    list-style: none;
+    text-align: center;
+  }
+  .slideIn ul a {
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+  }
+  .slideIn ul a:hover {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .slideIn ul h1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type=checkbox]:checked + .slideIn {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    color: white;
+    width: 100%;
+    z-index: 2;
+  }
+}
+header {
+  background-color: #B9DDE7;
+}
+header div.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+@media (max-width: 1050px) {
+  header div.wrapper {
+    height: 100vh;
+  }
+}
+header div.wrapper nav {
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  header div.wrapper nav {
+    display: none;
+  }
+}
+header div.wrapper nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1050px) {
+  header div.wrapper nav ul {
+    width: 90%;
+  }
+}
+header div.wrapper nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header div.wrapper nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: calc(16px + (20 - 16) * ((100vw - 335px) / (1680 - 335)));
+}
+header div.wrapper nav ul li a:hover {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: -10px;
+}
+@media (max-width: 768px) {
+  header div.wrapper nav ul li a {
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+  }
+}
+header div.wrapper nav ul li h1 {
+  margin: 0;
+}
+header div.wrapper nav ul li h1 a {
+  font-size: 4rem;
+}
+header div.wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1050px) {
+  header div.wrapper .container {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  header div.wrapper .container {
+    margin-top: 11vh;
+    height: 100%;
+  }
+}
+header div.wrapper .container .headerImage {
+  height: 85vh;
+  width: calc(480px + (640 - 480) * ((100vw - 1050px) / (1680 - 1050)));
+  margin-right: 30px;
+  box-shadow: 20px 20px white;
+}
+@media (max-width: 1050px) {
+  header div.wrapper .container .headerImage {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header div.wrapper .container .headerImage {
+    height: 65%;
+    margin: 0 auto;
+    box-shadow: 15px 15px white;
+  }
+}
+header div.wrapper .container .headerText {
+  width: calc(420px + (720 - 420) * ((100vw - 1050px) / (1680 - 1050)));
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1050px) {
+  header div.wrapper .container .headerText {
+    position: absolute;
+    top: 67%;
+    width: 70%;
+    justify-content: center;
+  }
+}
+header div.wrapper .container .headerText .textContainer {
+  position: relative;
+}
+header div.wrapper .container .headerText .textContainer p {
+  font-size: calc(100px + (150 - 100) * ((100vw - 640px) / (1680 - 640)));
+}
+@media (max-width: 640px) {
+  header div.wrapper .container .headerText .textContainer p {
+    font-size: calc(80px + (100 - 80) * ((100vw - 335px) / (640 - 335)));
+  }
+}
+header div.wrapper .container .headerText .textContainer img {
+  position: absolute;
+  right: -11%;
+  top: 22%;
+  width: 38%;
+  height: 34%;
+}
+
+.whoIsHarper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 90px 0;
+  background: #F6F6F6;
+}
+@media (max-width: 1050px) {
+  .whoIsHarper {
+    justify-content: center;
+    padding: 120px 0 70px 0;
+  }
+}
+@media (max-width: 640px) {
+  .whoIsHarper {
+    padding: 50px 0;
+  }
+}
+.whoIsHarper div {
+  width: 45%;
+  margin-right: 5%;
+}
+@media (max-width: 1050px) {
+  .whoIsHarper div {
+    width: 65%;
+    margin: 0;
+    text-align: center;
+  }
+}
+.whoIsHarper div h2 {
+  font-size: 6rem;
+  margin-top: 0;
+}
+@media (max-width: 640px) {
+  .whoIsHarper div h2 {
+    font-size: calc(50px + (60 - 50) * ((100vw - 335px) / (640 - 335)));
+  }
+}
+.whoIsHarper div p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  line-height: 35px;
+}
+@media (max-width: 640px) {
+  .whoIsHarper div p {
+    line-height: 27px;
+  }
+}
+.whoIsHarper div button {
+  background: #F38D8D;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.whoIsHarper div button:hover {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.whoIsHarper div button:focus {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+
+.info {
+  background: #F6F6F6;
+}
+.info .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 90px 0;
+}
+@media (max-width: 768px) {
+  .info .wrapper {
+    padding: 20px 0 45px;
+  }
+}
+.info .wrapper .photos,
+.info .wrapper .about,
+.info .wrapper .blog,
+.info .wrapper .contactMe {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  margin: 25px 0;
+}
+@media (max-width: 768px) {
+  .info .wrapper .photos,
+.info .wrapper .about,
+.info .wrapper .blog,
+.info .wrapper .contactMe {
+    width: 100%;
+  }
+}
+.info .wrapper .photos .emojiBackground,
+.info .wrapper .about .emojiBackground,
+.info .wrapper .blog .emojiBackground,
+.info .wrapper .contactMe .emojiBackground {
+  width: 10%;
+  font-size: 2.5rem;
+  position: relative;
+  left: -5%;
+}
+@media (max-width: 768px) {
+  .info .wrapper .photos .emojiBackground,
+.info .wrapper .about .emojiBackground,
+.info .wrapper .blog .emojiBackground,
+.info .wrapper .contactMe .emojiBackground {
+    left: -3%;
+  }
+}
+@media (max-width: 640px) {
+  .info .wrapper .photos .emojiBackground,
+.info .wrapper .about .emojiBackground,
+.info .wrapper .blog .emojiBackground,
+.info .wrapper .contactMe .emojiBackground {
+    left: -7%;
+  }
+}
+.info .wrapper .photos .emojiBackground i,
+.info .wrapper .about .emojiBackground i,
+.info .wrapper .blog .emojiBackground i,
+.info .wrapper .contactMe .emojiBackground i {
+  background: #B9DDE7;
+  border-radius: 50%;
+  padding: 10px;
+}
+.info .wrapper .photos div,
+.info .wrapper .about div,
+.info .wrapper .blog div,
+.info .wrapper .contactMe div {
+  width: 90%;
+}
+.info .wrapper .photos div h3,
+.info .wrapper .about div h3,
+.info .wrapper .blog div h3,
+.info .wrapper .contactMe div h3 {
+  font-size: 4rem;
+  margin-top: 0;
+}
+.info .wrapper .photos div p,
+.info .wrapper .about div p,
+.info .wrapper .blog div p,
+.info .wrapper .contactMe div p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .story {
+    margin-top: 100px;
+  }
+}
+.story .upperBackground {
+  width: 50%;
+  background: #68B0C1;
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 900px) {
+  .story .upperBackground {
+    height: 35vh;
+    transform: scale(0.8) translateY(100px) rotate(-15deg);
+  }
+}
+@media (max-width: 640px) {
+  .story .upperBackground {
+    width: 95%;
+    margin-bottom: 100px;
+  }
+}
+.story .upperBackground .image {
+  width: 80%;
+  position: relative;
+  top: -25px;
+  right: 25px;
+}
+@media (max-width: 900px) {
+  .story .upperBackground .image {
+    right: 0;
+    top: -70px;
+    transform: scale(1.2);
+  }
+}
+.story .upperText {
+  width: 45%;
+  padding-right: 7%;
+}
+@media (max-width: 768px) {
+  .story .upperText {
+    width: 50%;
+  }
+}
+@media (max-width: 640px) {
+  .story .upperText {
+    width: 85%;
+    margin: 0 0 20% 10%;
+  }
+}
+.story .upperText h3 {
+  font-size: 4rem;
+}
+@media (max-width: 900px) {
+  .story .upperText h3 {
+    margin-bottom: 20px;
+  }
+}
+.story .upperText p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.story .upperText button {
+  background: #F38D8D;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.story .upperText button:hover {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.story .upperText button:focus {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.story .bottomText {
+  width: 45%;
+  padding-left: 8.5%;
+}
+@media (max-width: 900px) {
+  .story .bottomText {
+    transform: translate(-30px, -90px);
+    margin-top: calc(10px + (120 - 10) * ((100vw - 640px) / (900 - 640)));
+  }
+}
+@media (max-width: 768px) {
+  .story .bottomText {
+    width: 50%;
+  }
+}
+@media (max-width: 640px) {
+  .story .bottomText {
+    width: 85%;
+    order: 1;
+    margin: 10% 0 0 10%;
+  }
+}
+.story .bottomText h3 {
+  font-size: 4rem;
+}
+@media (max-width: 900px) {
+  .story .bottomText h3 {
+    margin-bottom: 20px;
+  }
+}
+.story .bottomText p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.story .bottomText button {
+  background: #F38D8D;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 30px;
+  float: right;
+  margin-right: 20px;
+}
+.story .bottomText button:hover {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.story .bottomText button:focus {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.story .bottomBackground {
+  width: 50%;
+  background: #227284;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  bottom: -50px;
+}
+@media (max-width: 900px) {
+  .story .bottomBackground {
+    height: 35vh;
+    right: 7%;
+    transform: translate(20px, 40px) rotate(15deg) scale(0.85);
+  }
+}
+@media (max-width: 640px) {
+  .story .bottomBackground {
+    width: 75%;
+    transform: translate(-10px, -60px) rotate(-15deg);
+    left: 10%;
+    margin: 100px 0;
+    top: 50px;
+  }
+}
+.story .bottomBackground .image {
+  width: 90%;
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
+@media (max-width: 900px) {
+  .story .bottomBackground .image {
+    top: -50px;
+    left: -20px;
+  }
+}
+@media (max-width: 640px) {
+  .story .bottomBackground .image {
+    top: -28px;
+    left: 38px;
+    transform: scaleX(1.1);
+  }
+}
+
+.journey {
+  background: #F6F6F6;
+  padding: 120px 0;
+}
+@media (max-width: 1050px) {
+  .journey {
+    padding: 80px 0 70px;
+  }
+}
+.journey .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.journey .wrapper .image {
+  width: calc(340px + (380 - 340) * ((100vw - 900px) / (1680 - 900)));
+}
+@media (max-width: 1050px) {
+  .journey .wrapper .image {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.journey .wrapper .description {
+  width: calc(385px + (940 - 385) * ((100vw - 900px) / (1680 - 900)));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1050px) {
+  .journey .wrapper .description {
+    width: 100%;
+    margin: 50px auto 0;
+    text-align: center;
+  }
+}
+.journey .wrapper .description h3 {
+  font-size: 6rem;
+  margin: 0;
+}
+@media (max-width: 1050px) {
+  .journey .wrapper .description h3 {
+    margin-bottom: 30px;
+  }
+}
+.journey .wrapper .description p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+@media (max-width: 1050px) {
+  .journey .wrapper .description p {
+    margin: 10px auto 0;
+  }
+}
+.journey .wrapper .description button {
+  background: #F38D8D;
+  border: none;
+  align-self: center;
+  margin-top: 50px;
+  padding: 15px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: calc(200px + (235 - 200) * ((100vw - 900px) / (1680 - 900)));
+}
+.journey .wrapper .description button:hover {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.journey .wrapper .description button:focus {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: calc(65px + (100 - 65) * ((100vw - 1050px) / (1680 - 1050))) 0;
+}
+@media (max-width: 1050px) {
+  .gallery {
+    padding: 3% 0;
+  }
+}
+@media (max-width: 768px) {
+  .gallery {
+    width: 100%;
+    padding: 0;
+  }
+}
+.gallery .image {
+  width: 31%;
+}
+@media (max-width: 768px) {
+  .gallery .image {
+    width: 100%;
+  }
+}
+
+nav {
+  background-color: #B9DDE7;
+  display: flex;
+  height: 10vh;
+}
+@media (max-width: 768px) {
+  nav {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: calc(320px + (920 - 320) * ((100vw - 335px) / (1680 - 335)));
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: calc(15px + (20 - 15) * ((100vw - 335px) / (1680 - 335)));
+}
+nav ul li a:hover {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: -10px;
+}
+nav ul li h1 {
+  margin: 0;
+}
+nav ul li h1 a {
+  font-size: calc(30px + (40 - 30) * ((100vw - 335px) / (1680 - 335)));
+}
+
+.header {
+  height: 45vh;
+  background-image: url(../harper-assets/blog-image-1.jpg);
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header {
+    background-position: 50%;
+  }
+}
+.header h2 {
+  font-size: 7rem;
+  position: absolute;
+  bottom: -9.8%;
+  left: 8.2%;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .header h2 {
+    font-size: 5.5rem;
+  }
+}
+
+.blogMain {
+  padding: 100px 0;
+  background: #F6F6F6;
+}
+.blogMain .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper {
+    flex-direction: column;
+  }
+}
+.blogMain .wrapper .aboutHarper {
+  width: 27%;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .aboutHarper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .aboutHarper {
+    flex-direction: column;
+    height: 1%;
+  }
+}
+.blogMain .wrapper .aboutHarper section:nth-of-type(1) {
+  background: white;
+  padding: 7.7%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .aboutHarper section:nth-of-type(1) {
+    width: calc(300px + (600 - 300) * ((100vw - 600px) / (1100 - 600)));
+    padding: 3%;
+  }
+  .blogMain .wrapper .aboutHarper section:nth-of-type(1) section:nth-of-type(1) {
+    height: 100%;
+  }
+  .blogMain .wrapper .aboutHarper section:nth-of-type(1) section:nth-of-type(1) .image {
+    height: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .aboutHarper section:nth-of-type(1) {
+    width: 100%;
+  }
+}
+.blogMain .wrapper .aboutHarper section:nth-of-type(1) h3 {
+  font-size: 2.5rem;
+}
+.blogMain .wrapper .aboutHarper section:nth-of-type(1) p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.blogMain .wrapper .aboutHarper section:nth-of-type(1) p a {
+  text-decoration: none;
+  color: #227284;
+}
+.blogMain .wrapper .aboutHarper .recentPosts {
+  background: white;
+  font-size: 1.8rem;
+  padding: 8%;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .aboutHarper .recentPosts {
+    width: calc(210px + (250 - 210) * ((100vw - 600px) / (1100 - 600)));
+    padding: 3% 3% 3% 3%;
+    height: 53vh;
+  }
+  .blogMain .wrapper .aboutHarper .recentPosts ul {
+    line-height: 35px;
+  }
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .aboutHarper .recentPosts {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 43vh;
+  }
+}
+.blogMain .wrapper .aboutHarper .recentPosts h3 {
+  font-size: 2.5rem;
+}
+.blogMain .wrapper .aboutHarper .recentPosts ul {
+  font-family: "Cabin", sans-serif;
+}
+.blogMain .wrapper .travelDestinations {
+  width: 71%;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .travelDestinations {
+    width: 100%;
+  }
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(1) {
+  margin-bottom: 70px;
+  border-bottom: 5px solid #227284;
+  padding: 3% 3% 120px 3%;
+  background: white;
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(1) h3 {
+  font-size: 4rem;
+  margin-top: 0;
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(1) p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  font-family: "Cabin", sans-serif;
+  background: white;
+  margin-top: 0;
+  border-bottom: 0;
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie {
+    flex-direction: column;
+  }
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie .image {
+  width: 22%;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie .image {
+    width: calc(195px + (200 - 195) * ((100vw - 650px) / (1100 - 650)));
+  }
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie div {
+  font-size: 1.8rem;
+  width: 75%;
+  line-height: 30px;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie div {
+    width: calc(305px + (660 - 305) * ((100vw - 650px) / (1100 - 650)));
+    font-size: calc(16px + (18 - 16) * ((100vw - 650px) / (1100 - 650)));
+    line-height: calc(25px + (30 - 25) * ((100vw - 650px) / (1100 - 650)));
+  }
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .maggie div {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  font-family: "Cabin", sans-serif;
+  background: white;
+  margin-top: 30px;
+  border-bottom: 5px solid #227284;
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy {
+    flex-direction: column;
+  }
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy .image {
+  width: 22%;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy .image {
+    width: calc(195px + (200 - 195) * ((100vw - 650px) / (1100 - 650)));
+  }
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy div {
+  font-size: 1.8rem;
+  width: 75%;
+  line-height: 30px;
+}
+@media (max-width: 1100px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy div {
+    width: calc(305px + (660 - 305) * ((100vw - 650px) / (1100 - 650)));
+    font-size: calc(16px + (18 - 16) * ((100vw - 650px) / (1100 - 650)));
+    line-height: calc(25px + (30 - 25) * ((100vw - 650px) / (1100 - 650)));
+  }
+}
+@media (max-width: 640px) {
+  .blogMain .wrapper .travelDestinations section:nth-of-type(2) .daisy div {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.blogMain .wrapper .travelDestinations form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.blogMain .wrapper .travelDestinations form input {
+  width: 48.5%;
+  border: none;
+  padding: 2.5%;
+  font-size: 1.8rem;
+}
+.blogMain .wrapper .travelDestinations form textarea {
+  width: 100%;
+  border: none;
+  padding: 2.5%;
+  margin-top: 30px;
+  font-size: 1.8rem;
+}
+.blogMain .wrapper .travelDestinations form button {
+  background: #F38D8D;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 30px;
+  width: 100%;
+}
+.blogMain .wrapper .travelDestinations form button:hover {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.blogMain .wrapper .travelDestinations form button:focus {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+
+.legal {
+  font-family: "Cabin", sans-serif;
+  background: black;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0.7%;
+  font-size: 1.4rem;
+}
+
+.contactMain {
+  background: #F6F6F6;
+}
+.contactMain .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+@media (max-width: 640px) {
+  .contactMain .wrapper {
+    flex-direction: column;
+  }
+}
+.contactMain .wrapper .contact {
+  width: 35%;
+  padding: 2%;
+  background: white;
+}
+@media (max-width: 640px) {
+  .contactMain .wrapper .contact {
+    width: 100%;
+  }
+}
+.contactMain .wrapper .contact ul:nth-of-type(1) {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.contactMain .wrapper .contact ul:nth-of-type(1) li {
+  margin-right: 25px;
+  font-size: 2.5rem;
+}
+.contactMain .wrapper .contact p {
+  font-size: 2.5rem;
+}
+.contactMain .wrapper .contact ul:nth-of-type(2) {
+  list-style: none;
+  padding: 0;
+  font-size: 2rem;
+  font-family: "Cabin", sans-serif;
+  line-height: 40px;
+}
+.contactMain .wrapper form {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  .contactMain .wrapper form {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+.contactMain .wrapper form input {
+  width: 48.5%;
+  border: none;
+  padding: 2.5%;
+  font-size: 1.8rem;
+}
+.contactMain .wrapper form textarea {
+  width: 100%;
+  border: none;
+  padding: 2.5%;
+  margin-top: 30px;
+  font-size: 1.8rem;
+}
+.contactMain .wrapper form button {
+  background: #F38D8D;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 30px;
+  width: 100%;
+}
+.contactMain .wrapper form button:hover {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}
+.contactMain .wrapper form button:focus {
+  border: 5px solid #227284;
+  padding: 10px 25px;
+}

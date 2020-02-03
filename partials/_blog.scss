@@ -1,0 +1,151 @@
+@include contactBlogHeader;
+
+.blogMain {
+    padding: 100px 0;
+    background: $mainBackground;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include mq1100 {
+            flex-direction: column;
+        }
+
+        .aboutHarper {
+            width: 27%;
+
+            @include mq1100 {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            @include mq640 {
+                flex-direction: column;
+                height: 1%;
+            }
+
+            section:nth-of-type(1) {
+                background: white;
+                padding: 7.7%;
+                margin-bottom: 30px;
+
+                @include mq1100 {
+                    width: calc(300px + (600 - 300) * ((100vw - 600px) / (1100 - 600)));;
+                    padding: 3%;
+
+                    section:nth-of-type(1) {
+                        height: 100%;
+
+                        .image {
+                            height: 100%;
+                        }
+                    }
+                }
+
+                @include mq640 {
+                    width: 100%;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                }
+        
+                p {
+                    @include p(30px);
+
+                    a {
+                        text-decoration: none;
+                        color: #227284;
+                    }
+                }
+            }
+    
+            .recentPosts {
+                background: white;
+                font-size: 1.8rem;
+                padding: 8%;
+
+                @include mq1100 {
+                    width: calc(210px + (250 - 210) * ((100vw - 600px) / (1100 - 600)));
+                    padding: 3% 3% 3% 3%;
+                    height: 53vh;
+
+                    ul {
+                        line-height: 35px;
+                    }
+                }
+
+                @include mq640 {
+                    width: 100%;
+                    margin-bottom: 30px;
+                    height: 43vh;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                }
+
+                ul {
+                    font-family: 'Cabin', sans-serif;
+                }
+            }
+        }
+        .travelDestinations {
+            width: 71%;
+
+            @include mq1100 {
+                width: 100%;
+            }
+
+            section:nth-of-type(1) {
+                margin-bottom: 70px;
+                border-bottom: 5px solid #227284;
+                padding: 3% 3% 120px 3%;
+                background: white;
+
+
+                h3 {
+                    font-size:4rem;
+                    margin-top: 0;
+                }
+
+                p {
+                    @include p(30px);
+
+                }
+            }
+
+            section:nth-of-type(2) {
+
+                .maggie {
+                    @include maggieDaisy(0,0);
+                }
+
+
+                .daisy {
+                   @include maggieDaisy(30px, 5px solid #227284);
+                }
+            }
+
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 60px;
+                @include form;
+            }
+        }
+    }
+}
+
+.legal {
+    font-family: 'Cabin', sans-serif;
+    background: black;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0.7%;
+    font-size: 1.4rem;
+}

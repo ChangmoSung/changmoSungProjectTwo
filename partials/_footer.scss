@@ -1,0 +1,98 @@
+.journey {
+    background: $mainBackground;
+    padding: 120px 0;
+
+    @include mq1050 {
+        padding: 80px 0 70px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .image {
+            width: calc(340px + (380 - 340) * ((100vw - 900px) / (1680 - 900)));
+
+            @include mq1050 {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .description {
+            width: calc(385px + (940 - 385) * ((100vw - 900px) / (1680 - 900)));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include mq1050 {
+                width: 100%;
+                margin: 50px auto 0 ;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 6rem;
+                margin: 0;
+
+                @include mq1050 {
+                    margin-bottom: 30px;
+                }
+            }
+
+            p {
+                @include p (30px);
+
+                @include mq1050 {
+                    margin: 10px auto 0;
+                }
+            }
+
+            button {
+                background: #F38D8D;
+                border: none;
+                align-self: center;
+                margin-top: 50px;
+                padding: 15px 0;
+                font-size: 1.8rem;
+                font-weight: 700;
+                width: calc(200px + (235 - 200) * ((100vw - 900px) / (1680 - 900)));
+
+                &:hover {
+                border: 5px solid #227284;
+                padding: 10px 25px;
+                }
+
+                &:focus {
+                    border: 5px solid #227284;
+                    padding: 10px 25px;
+                }
+            }
+        }
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: calc(65px + (100 - 65) * ((100vw - 1050px) / (1680 - 1050))) 0;
+
+    @include mq1050 {
+        padding: 3% 0;
+    }
+
+    @include mq768 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .image {
+        width: 31%;
+
+        @include mq768 {
+            width: 100%;
+        }
+    }
+}

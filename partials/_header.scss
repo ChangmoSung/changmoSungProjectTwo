@@ -1,0 +1,135 @@
+header {
+    background-color: $primaryBackground;
+
+    div.wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+
+        @include mq1050 {
+            height: 100vh;
+        }
+
+        nav {
+            padding: 50px 0;
+
+            @include mq768 {
+                display: none;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0 auto;
+                width: 55%;
+                display: flex;
+                justify-content: space-between;
+                
+
+                @include mq1050 {
+                    width: 90%;
+                }
+
+                li {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        font-size: calc(16px + (20 - 16) * ((100vw - 335px) / (1680 - 335)));
+
+                        &:hover {
+                            background: white;
+                            border-radius: 10px;
+                            padding: 10px;
+                            margin: -10px;
+                        }
+
+                        @include mq768 {
+                            font-size: 5rem;
+                            color: white;
+                            text-decoration: none;
+                            width: 100%;
+                        }
+                    }
+
+                    h1 {
+                        margin: 0;
+
+                        a {
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            @include mq1050 {
+                flex-direction: column;
+                margin: 0 auto;
+                width: 85%;
+            }
+
+            @include mq768 {
+                margin-top: 11vh;
+                height: 100%;
+            }
+            
+            .headerImage {
+                height: 85vh;
+                width: calc(480px + (640 - 480) * ((100vw - 1050px) / (1680 - 1050)));
+                margin-right: 30px;
+                box-shadow: 20px 20px white;
+
+                @include mq1050 {
+                    width: 100%;
+                }
+
+                @include mq768 {
+                    height: 65%;
+                    margin: 0 auto;
+                    box-shadow: 15px 15px white;
+                }
+            }
+            
+            .headerText {
+                width: calc(420px + (720 - 420) * ((100vw - 1050px) / (1680 - 1050)));
+                display: flex;
+                align-items: center;
+
+                @include mq1050 {
+                    position: absolute;
+                    top: 67%;
+                    // bottom: -5%;
+                    width: 70%;
+                    justify-content: center;
+                }
+                
+                .textContainer {
+                    position: relative;
+
+                    p {
+                        font-size: calc(100px + (150 - 100) * ((100vw - 640px) / (1680 - 640)));
+
+                        @include mq640 {
+                            font-size: calc(80px + (100 - 80) * ((100vw - 335px) / (640 - 335)));
+                        }
+                    }
+
+                    img {
+                        position:absolute;
+                        right: -11%;
+                        top: 22%;
+                        width: 38%;
+                        height: 34%;
+                    }
+                }
+            }
+        }
+    }
+}

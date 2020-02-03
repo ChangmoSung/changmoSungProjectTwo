@@ -1,0 +1,262 @@
+.whoIsHarper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 90px 0;
+    background: $mainBackground;
+
+    @include mq1050 {
+        justify-content: center;
+        padding: 120px 0 70px 0;
+    }
+
+    @include mq640 {
+        padding: 50px 0;
+    }
+
+    div {
+        width: 45%;
+        margin-right: 5%;
+
+        @include mq1050 {
+            width: 65%;
+            margin: 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 6rem;
+            margin-top: 0;
+
+            @include mq640 {
+                font-size: calc(50px + (60 - 50) * ((100vw - 335px) / (640 - 335)));
+            }
+        }
+
+        p {
+            @include p(35px);
+
+            @include mq640 {
+                line-height: 27px;
+            }
+        }
+
+        button {
+           @include button;
+        }
+    }
+}
+
+.info{
+    background: $mainBackground;
+    
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 90px 0;
+
+        @include mq768 {
+            padding: 20px 0 45px;
+        }
+
+        .photos,
+        .about,
+        .blog,
+        .contactMe {
+            display: flex;
+            justify-content: space-between;
+            width: 48%;
+            margin: 25px 0;
+
+            @include mq768 {
+                width: 100%;
+            }
+
+            .emojiBackground {
+                width: 10%;
+                font-size: 2.5rem;
+                position: relative;
+                left: -5%;
+
+                @include mq768 {
+                    left: -3%;
+                }
+
+                @include mq640 {
+                    left: -7%;
+                }
+
+                i {
+                    background: #B9DDE7;
+                    border-radius: 50%;
+                    padding:10px;
+                }
+            }
+
+            div {
+                width: 90%;
+
+                h3 {
+                    font-size: 4rem;
+                    margin-top: 0;
+                }
+
+                p {
+                    @include p(30px);
+                }
+            }
+        }
+    }
+}
+
+.story {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include mq900 {
+        margin-top: 100px;
+    }
+
+    .upperBackground {
+        width: 50%;
+        background: #68B0C1;
+        position: relative;
+        top: -25px;
+        display: flex;
+        justify-content: flex-end;
+
+        @include mq900 {
+            height: 35vh;
+            transform: scale(0.8) translateY(100px) rotate(-15deg);
+        }
+
+        @include mq640 {
+            width: 95%;
+            margin-bottom: 100px;
+        }
+
+        .image {
+            width: 80%;
+            position: relative;
+            top: -25px;
+            right: 25px;
+
+            @include mq900 {
+                right: 0;
+                top: -70px;
+                transform: scale(1.2)
+            }
+        }
+    }
+
+    .upperText {
+        width: 45%;
+        padding-right: 7%;
+
+        @include mq768 {
+            width: 50%;
+        }
+
+        @include mq640 {
+            width: 85%;
+            margin: 0 0 20% 10%;
+        }
+
+        h3 {
+            font-size: 4rem;
+
+            @include mq900 {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            @include p(30px);
+        }
+
+        button {
+            @include button;
+        }
+    }
+
+    .bottomText {
+        width: 45%;
+        padding-left: 8.5%;
+
+        @include mq900 {
+            transform: translate(-30px, -90px);
+            margin-top: calc(10px + (120 - 10) * ((100vw - 640px) / (900 - 640)));
+        }
+
+        @include mq768 {
+            width: 50%;
+        }
+
+        @include mq640 {
+            width: 85%;
+            order: 1;
+            margin: 10% 0 0 10%;
+        }
+
+        h3 {
+            font-size: 4rem;
+
+            @include mq900 {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            @include p(30px);
+        }
+
+        button {
+            @include button;
+            float: right;
+            margin-right: 20px;
+        }
+    }
+
+    .bottomBackground {
+        width: 50%;
+        background: #227284;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        bottom: -50px;
+
+        @include mq900 {
+            height: 35vh;
+            right: 7%;
+            transform: translate(20px, 40px) rotate(15deg) scale(0.85);
+        }
+
+        @include mq640 {
+            width: 75%;
+            transform: translate(-10px, -60px) rotate(-15deg);
+            left: 10%;
+            margin: 100px 0;
+            top: 50px;
+        }
+
+        .image {
+            width:90%;
+            position: relative;
+            top: -30px;
+            left: -30px;
+
+            @include mq900 {
+                top: -50px;
+                left: -20px;
+            }
+
+            @include mq640 {
+                top: -28px;
+                left: 38px;
+                transform: scaleX(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+@mixin button {
+    background: #F38D8D;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 30px;
+
+    &:hover {
+        border: 5px solid #227284;
+        padding: 10px 25px;
+    }
+
+    &:focus {
+        border: 5px solid #227284;
+        padding: 10px 25px;
+    }
+}
+
+@mixin p($lineHeight) {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.8rem;
+    line-height: $lineHeight;
+}
+
+@mixin contactBlogHeader {
+    nav {
+        background-color: $primaryBackground;
+        display: flex;
+        height: 10vh;
+
+        @include mq768 {
+                visibility: hidden;
+                position: absolute;
+            }
+        
+        ul {
+            padding: 0;
+            margin: 0 auto;
+            width: calc(320px + (920 - 320) * ((100vw - 335px) / (1680 - 335)));
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: calc(15px + (20 - 15) * ((100vw - 335px) / (1680 - 335)));
+
+                    &:hover {
+                        background: white;
+                        border-radius: 10px;
+                        padding: 10px;
+                        margin: -10px;
+                    }
+                }
+
+                h1 {
+                    margin: 0;
+
+                    a {
+                        font-size: calc(30px + (40 - 30) * ((100vw - 335px) / (1680 - 335)));
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        height: 45vh;
+        background-image: url(../harper-assets/blog-image-1.jpg);
+        background-size: cover;
+        position: relative;
+
+        @include mq768 {
+            background-position: 50%;
+        }
+
+        h2 {
+            font-size: 7rem;
+            position: absolute;
+            bottom: -9.8%;
+            left: 8.2%;
+            margin: 0;
+
+            @include mq640 {
+                font-size: 5.5rem;
+            }
+        }
+    }
+}
+
+@mixin form {
+    input {
+        width: 48.5%;
+        border: none;
+        padding: 2.5%;
+        font-size: 1.8rem;
+    }
+
+    textarea {
+            width: 100%;
+            border: none;
+            padding: 2.5%;
+            margin-top: 30px;
+            font-size: 1.8rem;
+    }
+    button {
+        @include button;
+        width: 100%;
+    }
+}
+
+@mixin maggieDaisy($margin, $border) {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    font-family: 'Cabin', sans-serif;
+    background: white;
+    margin-top: $margin;
+    border-bottom: $border;
+
+    @include mq640 {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 22%;
+
+        @include mq1100 {
+            width: calc(195px + (200 - 195) * ((100vw - 650px) / (1100 - 650)));
+        }
+
+        @include mq640 {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    div {
+        font-size: 1.8rem;
+        width: 75%;
+        line-height: 30px;
+
+        @include mq1100 {
+            width: calc(305px + (660 - 305) * ((100vw - 650px) / (1100 - 650)));
+            font-size: calc(16px + (18 - 16) * ((100vw - 650px) / (1100 - 650)));
+            line-height: calc(25px + (30 - 25) * ((100vw - 650px) / (1100 - 650)));
+        }
+
+        @include mq640 {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }    
+}
+
+
+@mixin mq1100 {
+    @media(max-width: 1100px) {
+        @content;
+    }
+}
+
+@mixin mq1050 {
+    @media(max-width: 1050px) {
+        @content;
+    }
+}
+
+@mixin mq900 {
+    @media(max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin mq768 {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mq640 {
+    @media(max-width: 640px) {
+        @content;
+    }
+}
